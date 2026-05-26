@@ -1,0 +1,398 @@
+[
+    {
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600",
+        "title": "TaskFlow",
+        "companyName": "NovaSoft",
+        "id": 1,
+        "description": "A productivity app for managing tasks, deadlines, and team collaboration.",
+        "size": 45,
+        "reviews": 12450,
+        "ratingAvg": 4.6,
+        "downloads": 500000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 220
+            },
+            {
+                "name": "2 star",
+                "count": 410
+            },
+            {
+                "name": "3 star",
+                "count": 1200
+            },
+            {
+                "name": "4 star",
+                "count": 3900
+            },
+            {
+                "name": "5 star",
+                "count": 6720
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600",
+        "title": "MusicWave",
+        "companyName": "SoundHive",
+        "id": 2,
+        "description": "Stream millions of songs and create personalized playlists.",
+        "size": 78,
+        "reviews": 22100,
+        "ratingAvg": 4.8,
+        "downloads": 1200000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 150
+            },
+            {
+                "name": "2 star",
+                "count": 260
+            },
+            {
+                "name": "3 star",
+                "count": 850
+            },
+            {
+                "name": "4 star",
+                "count": 5200
+            },
+            {
+                "name": "5 star",
+                "count": 15640
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600",
+        "title": "FitPulse",
+        "companyName": "HealthSync",
+        "id": 3,
+        "description": "Track workouts, calories, and daily fitness goals.",
+        "size": 62,
+        "reviews": 9800,
+        "ratingAvg": 4.4,
+        "downloads": 350000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 310
+            },
+            {
+                "name": "2 star",
+                "count": 520
+            },
+            {
+                "name": "3 star",
+                "count": 1340
+            },
+            {
+                "name": "4 star",
+                "count": 3200
+            },
+            {
+                "name": "5 star",
+                "count": 4430
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600",
+        "title": "ChatLoop",
+        "companyName": "Connectify",
+        "id": 4,
+        "description": "Secure messaging app with voice and video calls.",
+        "size": 88,
+        "reviews": 30050,
+        "ratingAvg": 4.7,
+        "downloads": 2500000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 500
+            },
+            {
+                "name": "2 star",
+                "count": 710
+            },
+            {
+                "name": "3 star",
+                "count": 1800
+            },
+            {
+                "name": "4 star",
+                "count": 7600
+            },
+            {
+                "name": "5 star",
+                "count": 19440
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600",
+        "title": "Learnify",
+        "companyName": "EduLabs",
+        "id": 5,
+        "description": "Interactive learning platform with quizzes and video lessons.",
+        "size": 55,
+        "reviews": 14320,
+        "ratingAvg": 4.5,
+        "downloads": 780000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 270
+            },
+            {
+                "name": "2 star",
+                "count": 430
+            },
+            {
+                "name": "3 star",
+                "count": 1550
+            },
+            {
+                "name": "4 star",
+                "count": 4700
+            },
+            {
+                "name": "5 star",
+                "count": 7370
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600",
+        "title": "FoodDash",
+        "companyName": "QuickBite",
+        "id": 6,
+        "description": "Order food online from nearby restaurants with fast delivery.",
+        "size": 70,
+        "reviews": 26890,
+        "ratingAvg": 4.3,
+        "downloads": 1500000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1200
+            },
+            {
+                "name": "2 star",
+                "count": 1800
+            },
+            {
+                "name": "3 star",
+                "count": 3900
+            },
+            {
+                "name": "4 star",
+                "count": 8200
+            },
+            {
+                "name": "5 star",
+                "count": 11790
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600",
+        "title": "TravelMate",
+        "companyName": "SkyRoute",
+        "id": 7,
+        "description": "Book flights, hotels, and plan trips with ease.",
+        "size": 90,
+        "reviews": 11200,
+        "ratingAvg": 4.2,
+        "downloads": 640000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 610
+            },
+            {
+                "name": "2 star",
+                "count": 870
+            },
+            {
+                "name": "3 star",
+                "count": 1700
+            },
+            {
+                "name": "4 star",
+                "count": 3600
+            },
+            {
+                "name": "5 star",
+                "count": 4420
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600",
+        "title": "PhotoSnap",
+        "companyName": "PixelForge",
+        "id": 8,
+        "description": "Advanced photo editor with filters and AI enhancements.",
+        "size": 120,
+        "reviews": 18400,
+        "ratingAvg": 4.7,
+        "downloads": 980000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 240
+            },
+            {
+                "name": "2 star",
+                "count": 350
+            },
+            {
+                "name": "3 star",
+                "count": 960
+            },
+            {
+                "name": "4 star",
+                "count": 5100
+            },
+            {
+                "name": "5 star",
+                "count": 11750
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
+        "title": "CodeMaster",
+        "companyName": "DevCore",
+        "id": 9,
+        "description": "Coding practice app for developers and programming learners.",
+        "size": 65,
+        "reviews": 9700,
+        "ratingAvg": 4.9,
+        "downloads": 430000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 90
+            },
+            {
+                "name": "2 star",
+                "count": 140
+            },
+            {
+                "name": "3 star",
+                "count": 420
+            },
+            {
+                "name": "4 star",
+                "count": 2100
+            },
+            {
+                "name": "5 star",
+                "count": 6950
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600",
+        "title": "CloudNote",
+        "companyName": "MemoStack",
+        "id": 10,
+        "description": "Sync notes across devices with cloud backup support.",
+        "size": 40,
+        "reviews": 8300,
+        "ratingAvg": 4.1,
+        "downloads": 290000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 430
+            },
+            {
+                "name": "2 star",
+                "count": 620
+            },
+            {
+                "name": "3 star",
+                "count": 1500
+            },
+            {
+                "name": "4 star",
+                "count": 2500
+            },
+            {
+                "name": "5 star",
+                "count": 3250
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600",
+        "title": "SecureVault",
+        "companyName": "CyberNest",
+        "id": 11,
+        "description": "Password manager with encrypted cloud synchronization.",
+        "size": 50,
+        "reviews": 6100,
+        "ratingAvg": 4.6,
+        "downloads": 210000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 140
+            },
+            {
+                "name": "2 star",
+                "count": 260
+            },
+            {
+                "name": "3 star",
+                "count": 700
+            },
+            {
+                "name": "4 star",
+                "count": 1900
+            },
+            {
+                "name": "5 star",
+                "count": 3100
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600",
+        "title": "MovieVerse",
+        "companyName": "StreamBox",
+        "id": 12,
+        "description": "Watch trending movies and TV shows in HD quality.",
+        "size": 150,
+        "reviews": 41000,
+        "ratingAvg": 4.8,
+        "downloads": 5000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 600
+            },
+            {
+                "name": "2 star",
+                "count": 920
+            },
+            {
+                "name": "3 star",
+                "count": 2200
+            },
+            {
+                "name": "4 star",
+                "count": 9800
+            },
+            {
+                "name": "5 star",
+                "count": 27480
+            }
+        ]
+    }
+]
