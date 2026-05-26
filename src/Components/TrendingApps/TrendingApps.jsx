@@ -1,8 +1,7 @@
 import React from 'react';
 import AppCard from './AppCard';
 
-const TrendingApps = ({appsDetails}) => {
-    console.log(appsDetails);
+const TrendingApps = ({ appsDetails }) => {
     return (
         <div className='mt-20 w-5/6 mx-auto '>
             {/* title and description */}
@@ -11,9 +10,11 @@ const TrendingApps = ({appsDetails}) => {
                 <p className='text-[#627382] text-xl'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             {/* app section */}
-            <div className='grid grid-cols-4'>
+            <div className='grid grid-cols-4 gap-4 space-x-4'>
                 {/* app card */}
-                <AppCard></AppCard>
+                {
+                    appsDetails.map((app) => (<AppCard app={app} key={app.id}></AppCard>))
+                }
             </div>
         </div>
     );
