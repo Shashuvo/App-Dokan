@@ -11,6 +11,10 @@ const router = createBrowserRouter([
         {
             index: true,
             path: "/",
+            loader: async () => {
+                    await new Promise(resolve => setTimeout(resolve, 250));
+                    return fetch('/apps.json')
+                },
             Component: Home,
         },
       ]

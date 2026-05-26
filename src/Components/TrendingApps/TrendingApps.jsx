@@ -1,7 +1,8 @@
 import React from 'react';
 import AppCard from './AppCard';
 
-const TrendingApps = () => {
+const TrendingApps = ({appsDetails}) => {
+    console.log(appsDetails);
     return (
         <div className='mt-20 w-5/6 mx-auto '>
             {/* title and description */}
