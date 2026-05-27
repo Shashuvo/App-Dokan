@@ -22,7 +22,7 @@ const TrendingApps = ({ appsDetails }) => {
             {appsDetails.length > 8 && (
                 <div className='text-center mt-12'>
                     <button
-                        onClick={() => navigate('/all-apps')}
+                        onClick={() => navigate('/apps')}
                         className="btn btn-outline rounded-sm bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white text-[20px] font-semibold p-6">
                         Show All
                     </button>
