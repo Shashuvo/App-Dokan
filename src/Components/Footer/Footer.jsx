@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer class="$$footer $$footer-horizontal $$footer-center flex flex-col items-center space-y-10 bg-white text-center rounded p-12">
-            <nav class="flex gap-12">
+            <nav class="flex gap-12 text-xl">
                 <a class="$$link $$link-hover">About us</a>
                 <a class="$$link $$link-hover">Contact</a>
                 <a class="$$link $$link-hover">Jobs</a>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </a>
                 </div>
             </nav>
-            <aside>
+            <aside className='text-xl'>
                 <p>Copyright © {new Date().getFullYear()} - All right reserved by App Dokan</p>
             </aside>
         </footer>
