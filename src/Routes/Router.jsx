@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Root from "../Pages/Root/Root";
 import Home from "../Pages/Home/Home";
+import Apps from "../Pages/Apps/Apps";
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
             Component: Home,
             hydrateFallbackElement: <div>Loading...</div>
         },
+        {
+          path:"apps",
+          Component: Apps,
+        }
       ]
     },
   ]);
