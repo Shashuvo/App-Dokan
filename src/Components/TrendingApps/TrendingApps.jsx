@@ -1,6 +1,6 @@
 
 import { useNavigate } from 'react-router';
-import AppCard from './AppCard';
+import AppCard from '../AppCard.jsx/AppCard';
 
 const TrendingApps = ({ appsDetails }) => {
     const navigate = useNavigate();
@@ -16,7 +16,7 @@ const TrendingApps = ({ appsDetails }) => {
             <div className='grid grid-cols-4 gap-4 space-x-4'>
                 {/* app card */}
                 {
-                    visibleApps.map((app) => (<AppCard app={app} key={app.id}></AppCard>))
+                    visibleApps.map((app) => (<AppCard app={app} key={app.id} isTrending></AppCard>))
                 }
             </div>
             {appsDetails.length > 8 && (

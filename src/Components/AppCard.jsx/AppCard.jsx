@@ -3,7 +3,7 @@ import { BsDownload } from 'react-icons/bs';
 import { FaStar } from 'react-icons/fa';
 import { IoMdRocket } from 'react-icons/io';
 
-const AppCard = ({ app }) => {
+const AppCard = ({ app, isTrending = false }) => {
     const { image, title, downloads, ratingAvg } = app;
     return (
         <div className="bg-white rounded-lg shadow-md p-4 w-76.5 space-y-4 hover:shadow-xl transition-all duration-300">
@@ -11,9 +11,12 @@ const AppCard = ({ app }) => {
             {/* Image */}
             <div className="relative bg-[#D9D9D9] rounded-md h-70 overflow-hidden">
                 {/* Trending Badge */}
-                <div className="absolute flex items-center top-3 left-2 z-10 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white text-sm font-semibold px-3 py-1 rounded-full shadow">
-                    <span><IoMdRocket /></span><span>Trending</span>
-                </div>
+                {isTrending && (
+                    <div className="absolute flex items-center gap-1 top-3 left-2 z-10 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white text-sm font-semibold px-3 py-1 rounded-full shadow">
+                        <IoMdRocket />
+                        <span>Trending</span>
+                    </div>
+                )}
                 <img
                     src={image}
                     alt={title}
