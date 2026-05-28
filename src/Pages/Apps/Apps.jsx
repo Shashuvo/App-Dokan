@@ -1,6 +1,9 @@
 import React from 'react';
+import { useLoaderData } from 'react-router';
+import AppCard from '../../Components/AppCard.jsx/AppCard';
 
 const Apps = () => {
+    const allApps = useLoaderData();
     return (
         <div className='mt-20 w-5/6 mx-auto'>
             {/* title & description */}
@@ -10,7 +13,7 @@ const Apps = () => {
             </div>
             {/* app counts & search apps */}
             <div className='mb-10 flex justify-between'>
-                <span className='text-2xl font-semibold'>(132) Apps Found</span>
+                <span className='text-2xl font-semibold'>({allApps.length}) Apps Found</span>
                 <span>
                     <label class="input text-[#627382] border-[#D2D2D2] bg-transparent">
                         <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -28,6 +31,13 @@ const Apps = () => {
                         <input type="search" required placeholder="Search Apps" />
                     </label></span>
             </div>
+            {/* apps card */}
+            <div className='grid grid-cols-4 gap-4 space-x-4 mb-20'>
+                {
+                    allApps.map((app) => <AppCard app={app} key={app.id}></AppCard>)
+                }
+            </div>
+
         </div>
     );
 };

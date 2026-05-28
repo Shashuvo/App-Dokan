@@ -5,26 +5,30 @@ import Apps from "../Pages/Apps/Apps";
 
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      Component: Root,
-      children : [
-        {
-            index: true,
-            path: "/",
-            loader: async () => {
-                    await new Promise(resolve => setTimeout(resolve, 250));
-                    return fetch('/apps.json')
-                },
-            Component: Home,
-            hydrateFallbackElement: <div>Loading...</div>
+  {
+    path: "/",
+    Component: Root,
+    children: [
+      {
+        index: true,
+        path: "/",
+        loader: async () => {
+          await new Promise(resolve => setTimeout(resolve, 250));
+          return fetch('/apps.json')
         },
-        {
-          path:"apps",
-          Component: Apps,
-        }
-      ]
-    },
-  ]);
+        Component: Home,
+        hydrateFallbackElement: <div>Loading...</div>
+      },
+      {
+        path: "apps",
+        loader: async () => {
+          await new Promise(resolve => setTimeout(resolve, 250));
+          return fetch('/apps.json')
+        },
+        Component: Apps,
+      }
+    ]
+  },
+]);
 
-  export default router;
+export default router;
