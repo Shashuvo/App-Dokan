@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router';
 import AppCard from '../../Components/AppCard.jsx/AppCard';
 
 const Apps = () => {
+    // apps data
     const allApps = useLoaderData();
+
+    const [searchText, setSearchText] = useState('');
+
+    // Filter apps by title
+    const filteredApps = allApps.filter(app =>
+        app.title.toLowerCase().includes(searchText.toLowerCase())
+    );
+
+
     return (
         <div className='mt-20 w-5/6 mx-auto'>
             {/* title & description */}
@@ -15,8 +25,12 @@ const Apps = () => {
             <div className='mb-10 flex justify-between'>
                 <span className='text-2xl font-semibold'>({allApps.length}) Apps Found</span>
                 <span>
-                    <label class="input text-[#627382] border-[#D2D2D2] bg-transparent">
-                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <label className="input text-[#627382] border-[#D2D2D2] bg-transparent">
+                        <svg
+                            className="h-[1em] opacity-50"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                        >
                             <g
                                 strokeLinejoin="round"
                                 strokeLinecap="round"
@@ -28,13 +42,30 @@ const Apps = () => {
                                 <path d="m21 21-4.3-4.3"></path>
                             </g>
                         </svg>
-                        <input type="search" required placeholder="Search Apps" />
-                    </label></span>
+
+                        <input
+                            type="search"
+                            value={searchText}
+                            onChange={(e) => setSearchText(e.target.value)}
+                            placeholder="Search Apps"
+                        />
+                    </label>
+                </span>
             </div>
             {/* apps card */}
             <div className='grid grid-cols-4 gap-4 space-x-4 mb-20'>
                 {
-                    allApps.map((app) => <AppCard app={app} key={app.id}></AppCard>)
+                    filteredApps.length > 0 ? (
+                        filteredApps.map((app) => (
+                            <AppCard app={app} key={app.id} />
+                        ))
+                    ) : (
+                        <div className="col-span-4 text-center py-20">
+                            <h2 className="text-5xl font-semibold text-[#627382]">
+                                No App Found
+                            </h2>
+                        </div>
+                    )
                 }
             </div>
 
