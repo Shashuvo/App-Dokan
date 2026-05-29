@@ -4,7 +4,7 @@
         "title": "TaskFlow",
         "companyName": "NovaSoft",
         "id": 1,
-        "description": "A productivity app for managing tasks, deadlines, and team collaboration.",
+        "description": "TaskFlow is a productivity app designed to help individuals and teams manage tasks, deadlines, and daily workflows in a structured and efficient way. It goes beyond simple to-do lists by offering a complete task management system.\n\nUsers can create projects, assign tasks, set priorities, and track progress in real time. Teams can collaborate easily with comments, updates, and shared dashboards.\n\nWith smart reminders, analytics, and productivity insights, TaskFlow helps users understand their work habits and improve efficiency over time.",
         "size": 45,
         "reviews": 12450,
         "ratingAvg": 4.6,
@@ -37,7 +37,7 @@
         "title": "MusicWave",
         "companyName": "SoundHive",
         "id": 2,
-        "description": "Stream millions of songs and create personalized playlists.",
+        "description": "MusicWave is a modern music streaming platform offering millions of songs across all genres. It is built to deliver a personalized listening experience for every user.\n\nThe app uses intelligent recommendation systems to suggest music based on mood, taste, and listening history. Users can create playlists and explore trending tracks.\n\nIt supports offline downloads, high-quality audio streaming, and smooth cross-device playback for uninterrupted music enjoyment.",
         "size": 78,
         "reviews": 22100,
         "ratingAvg": 4.8,
@@ -70,7 +70,7 @@
         "title": "FitPulse",
         "companyName": "HealthSync",
         "id": 3,
-        "description": "Track workouts, calories, and daily fitness goals.",
+        "description": "FitPulse helps users track workouts, calories, and daily fitness activity in a structured and intelligent way. It is designed to support healthier lifestyles.\n\nUsers can set fitness goals, follow workout plans, and monitor progress with detailed insights. The app adapts suggestions based on user performance.\n\nWith wearable integration and analytics, FitPulse provides accurate health tracking and motivation to stay consistent.",
         "size": 62,
         "reviews": 9800,
         "ratingAvg": 4.4,
@@ -103,7 +103,7 @@
         "title": "ChatLoop",
         "companyName": "Connectify",
         "id": 4,
-        "description": "Secure messaging app with voice and video calls.",
+        "description": "ChatLoop is a secure messaging application designed for fast and reliable communication. It supports text, voice, and video calls with strong performance.\n\nThe app uses end-to-end encryption to ensure privacy and security in all conversations. It is suitable for both personal and professional use.\n\nUsers can create groups, share files, and stay connected with teams or friends anywhere in the world.",
         "size": 88,
         "reviews": 30050,
         "ratingAvg": 4.7,
@@ -136,7 +136,7 @@
         "title": "Learnify",
         "companyName": "EduLabs",
         "id": 5,
-        "description": "Interactive learning platform with quizzes and video lessons.",
+        "description": "Learnify is an interactive learning platform designed to make education engaging and accessible. It combines video lessons, quizzes, and structured learning paths.\n\nStudents can track progress, test knowledge, and improve skills through interactive learning modules. It adapts content based on performance.\n\nLearnify supports academic learning, skill development, and professional growth in a single platform.",
         "size": 55,
         "reviews": 14320,
         "ratingAvg": 4.5,
@@ -169,7 +169,7 @@
         "title": "FoodDash",
         "companyName": "QuickBite",
         "id": 6,
-        "description": "Order food online from nearby restaurants with fast delivery.",
+        "description": "FoodDash connects users with nearby restaurants for fast and convenient food ordering. It simplifies the entire food delivery process.\n\nUsers can browse menus, place orders, and track deliveries in real time. The platform ensures fast service and reliable partners.\n\nWith secure payments and personalized recommendations, FoodDash makes food ordering smooth and enjoyable.",
         "size": 70,
         "reviews": 26890,
         "ratingAvg": 4.3,
@@ -202,7 +202,7 @@
         "title": "TravelMate",
         "companyName": "SkyRoute",
         "id": 7,
-        "description": "Book flights, hotels, and plan trips with ease.",
+        "description": "TravelMate helps users plan trips with ease by offering flight booking, hotel reservations, and itinerary management.\n\nIt provides destination suggestions, budget tools, and real-time travel updates for smoother planning.\n\nWith maps and travel guides, users can explore new places confidently and efficiently.",
         "size": 90,
         "reviews": 11200,
         "ratingAvg": 4.2,
@@ -235,7 +235,7 @@
         "title": "PhotoSnap",
         "companyName": "PixelForge",
         "id": 8,
-        "description": "Advanced photo editor with filters and AI enhancements.",
+        "description": "PhotoSnap is an advanced photo editing app with AI-powered tools and professional filters. It is designed for both beginners and experts.\n\nUsers can enhance images, remove backgrounds, and apply creative effects with ease. The app simplifies complex editing tasks.\n\nPhotoSnap helps transform ordinary photos into high-quality visuals effortlessly.",
         "size": 120,
         "reviews": 18400,
         "ratingAvg": 4.7,
@@ -268,7 +268,7 @@
         "title": "CodeMaster",
         "companyName": "DevCore",
         "id": 9,
-        "description": "Coding practice app for developers and programming learners.",
+        "description": "CodeMaster is a coding practice platform that helps developers improve programming skills through challenges and exercises.\n\nIt supports multiple languages and real-world problem-solving scenarios for better learning.\n\nIdeal for interviews and competitions, it strengthens logical thinking and coding ability.",
         "size": 65,
         "reviews": 9700,
         "ratingAvg": 4.9,
@@ -301,7 +301,7 @@
         "title": "CloudNote",
         "companyName": "MemoStack",
         "id": 10,
-        "description": "Sync notes across devices with cloud backup support.",
+        "description": "CloudNote is a cloud-based note-taking app that allows users to store and sync notes across devices.\n\nIt keeps data organized, accessible, and secure at all times. Users can manage ideas and reminders easily.\n\nIt is perfect for students and professionals who need quick and reliable note access.",
         "size": 40,
         "reviews": 8300,
         "ratingAvg": 4.1,
@@ -334,7 +334,7 @@
         "title": "SecureVault",
         "companyName": "CyberNest",
         "id": 11,
-        "description": "Password manager with encrypted cloud synchronization.",
+        "description": "SecureVault is a password manager that securely stores sensitive data using advanced encryption.\n\nIt protects passwords, cards, and private notes in a secure digital vault with strong authentication.\n\nIt ensures safety and convenience for managing digital identity.",
         "size": 50,
         "reviews": 6100,
         "ratingAvg": 4.6,
@@ -367,7 +367,7 @@
         "title": "MovieVerse",
         "companyName": "StreamBox",
         "id": 12,
-        "description": "Watch trending movies and TV shows in HD quality.",
+        "description": "MovieVerse is a streaming platform offering thousands of movies and TV shows in HD quality. It provides smooth and uninterrupted entertainment.\n\nUsers get personalized recommendations based on viewing history and preferences for better discovery.\n\nWith offline downloads and multi-device support, it delivers a cinema-like experience anywhere.",
         "size": 150,
         "reviews": 41000,
         "ratingAvg": 4.8,
@@ -392,6 +392,666 @@
             {
                 "name": "5 star",
                 "count": 27480
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=600",
+        "title": "ShopEase",
+        "companyName": "Marketly",
+        "id": 13,
+        "description": "ShopEase is an e-commerce application designed to make online shopping fast, simple, and enjoyable. It brings thousands of products into one easy-to-browse platform.\n\nUsers can search, compare prices, and explore categories with personalized recommendations based on their shopping behavior. It helps users make smarter purchase decisions.\n\nWith secure checkout, fast delivery tracking, and regular discounts, ShopEase delivers a complete modern shopping experience.",
+        "size": 95,
+        "reviews": 19800,
+        "ratingAvg": 4.4,
+        "downloads": 1100000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 520
+            },
+            {
+                "name": "2 star",
+                "count": 780
+            },
+            {
+                "name": "3 star",
+                "count": 2100
+            },
+            {
+                "name": "4 star",
+                "count": 6400
+            },
+            {
+                "name": "5 star",
+                "count": 10000
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?w=600",
+        "title": "GameHub",
+        "companyName": "PlayZone",
+        "id": 14,
+        "description": "GameHub is a gaming platform that brings multiple casual and competitive games into one ecosystem. It is built for entertainment and engagement.\n\nUsers can play multiplayer games, compete with friends, and track achievements and rankings. It offers a smooth and responsive gaming experience.\n\nRegular updates introduce new games and features, keeping the platform fresh and exciting for gamers of all levels.",
+        "size": 130,
+        "reviews": 27500,
+        "ratingAvg": 4.7,
+        "downloads": 3200000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 700
+            },
+            {
+                "name": "2 star",
+                "count": 900
+            },
+            {
+                "name": "3 star",
+                "count": 2300
+            },
+            {
+                "name": "4 star",
+                "count": 9000
+            },
+            {
+                "name": "5 star",
+                "count": 14600
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600",
+        "title": "WeatherNow",
+        "companyName": "SkyPulse",
+        "id": 15,
+        "description": "WeatherNow provides real-time weather updates and accurate forecasts for any location worldwide. It is designed to help users plan their day effectively.\n\nThe app includes hourly forecasts, storm alerts, and interactive weather maps for better understanding of conditions.\n\nWith precise data and clean visuals, WeatherNow ensures users are always prepared for changing weather conditions.",
+        "size": 35,
+        "reviews": 8600,
+        "ratingAvg": 4.3,
+        "downloads": 600000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 200
+            },
+            {
+                "name": "2 star",
+                "count": 340
+            },
+            {
+                "name": "3 star",
+                "count": 1100
+            },
+            {
+                "name": "4 star",
+                "count": 2900
+            },
+            {
+                "name": "5 star",
+                "count": 4060
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600",
+        "title": "NoteFlow",
+        "companyName": "MemoStack",
+        "id": 16,
+        "description": "NoteFlow is a smart note-taking application designed to help users capture and organize ideas efficiently. It supports fast note creation and cloud syncing.\n\nUsers can categorize notes, search content instantly, and access everything across multiple devices. It keeps information organized and accessible.\n\nNoteFlow is ideal for students, professionals, and anyone who needs a reliable digital notebook.",
+        "size": 42,
+        "reviews": 9100,
+        "ratingAvg": 4.2,
+        "downloads": 310000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 300
+            },
+            {
+                "name": "2 star",
+                "count": 500
+            },
+            {
+                "name": "3 star",
+                "count": 1600
+            },
+            {
+                "name": "4 star",
+                "count": 3000
+            },
+            {
+                "name": "5 star",
+                "count": 3700
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600",
+        "title": "HealthTrack",
+        "companyName": "VitalCore",
+        "id": 17,
+        "description": "HealthTrack is a health monitoring app that tracks daily fitness, sleep patterns, and vital statistics. It helps users maintain a healthy lifestyle.\n\nThe app provides detailed insights into health trends and suggests improvements based on user activity levels. It supports long-term wellness tracking.\n\nWith wearable integration and smart analytics, HealthTrack makes health management simple and effective.",
+        "size": 68,
+        "reviews": 10400,
+        "ratingAvg": 4.5,
+        "downloads": 420000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 280
+            },
+            {
+                "name": "2 star",
+                "count": 450
+            },
+            {
+                "name": "3 star",
+                "count": 1400
+            },
+            {
+                "name": "4 star",
+                "count": 3500
+            },
+            {
+                "name": "5 star",
+                "count": 4770
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600",
+        "title": "SecureVault Pro",
+        "companyName": "CyberNest",
+        "id": 18,
+        "description": "SecureVault Pro is a secure password and data management application designed for maximum protection. It uses advanced encryption technologies.\n\nUsers can store passwords, documents, and sensitive information safely in a protected digital vault. It ensures data privacy at all times.\n\nWith biometric authentication and secure cloud sync, SecureVault Pro provides both convenience and security.",
+        "size": 55,
+        "reviews": 7200,
+        "ratingAvg": 4.6,
+        "downloads": 250000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 150
+            },
+            {
+                "name": "2 star",
+                "count": 300
+            },
+            {
+                "name": "3 star",
+                "count": 800
+            },
+            {
+                "name": "4 star",
+                "count": 2200
+            },
+            {
+                "name": "5 star",
+                "count": 3750
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600",
+        "title": "StudyBuddy",
+        "companyName": "EduSmart",
+        "id": 19,
+        "description": "StudyBuddy is a student-focused application designed to improve learning efficiency and organization. It helps users manage study schedules and tasks.\n\nThe app includes reminders, progress tracking, and structured study plans to improve academic performance. It supports better time management.\n\nStudyBuddy makes studying more organized, consistent, and productive for students.",
+        "size": 48,
+        "reviews": 8900,
+        "ratingAvg": 4.3,
+        "downloads": 370000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 260
+            },
+            {
+                "name": "2 star",
+                "count": 400
+            },
+            {
+                "name": "3 star",
+                "count": 1300
+            },
+            {
+                "name": "4 star",
+                "count": 2800
+            },
+            {
+                "name": "5 star",
+                "count": 4140
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
+        "title": "CodeLab",
+        "companyName": "DevCore",
+        "id": 20,
+        "description": "CodeLab is a coding practice platform that helps developers improve their programming skills through hands-on challenges. It supports multiple languages.\n\nUsers can solve coding problems, practice algorithms, and learn from structured tutorials. It is designed for real-world skill building.\n\nCodeLab is ideal for beginners and advanced developers preparing for interviews and competitions.",
+        "size": 70,
+        "reviews": 9900,
+        "ratingAvg": 4.7,
+        "downloads": 460000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 120
+            },
+            {
+                "name": "2 star",
+                "count": 200
+            },
+            {
+                "name": "3 star",
+                "count": 600
+            },
+            {
+                "name": "4 star",
+                "count": 2400
+            },
+            {
+                "name": "5 star",
+                "count": 6580
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600",
+        "title": "TravelX",
+        "companyName": "SkyRoute",
+        "id": 21,
+        "description": "TravelX is a travel booking platform that helps users plan trips easily. It offers flights, hotels, and itinerary management.\n\nUsers can explore destinations, compare prices, and organize travel plans efficiently. It simplifies the entire travel experience.\n\nTravelX ensures smooth, affordable, and well-organized trip planning.",
+        "size": 92,
+        "reviews": 10100,
+        "ratingAvg": 4.2,
+        "downloads": 500000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 300
+            },
+            {
+                "name": "2 star",
+                "count": 500
+            },
+            {
+                "name": "3 star",
+                "count": 1500
+            },
+            {
+                "name": "4 star",
+                "count": 3200
+            },
+            {
+                "name": "5 star",
+                "count": 4600
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1522202222920-3b8f3c7b3f3a?w=600",
+        "title": "FitZone",
+        "companyName": "HealthSync",
+        "id": 22,
+        "description": "FitZone is a fitness tracking application designed to help users monitor workouts and calorie intake. It supports personalized fitness goals.\n\nUsers can follow workout routines and track progress over time with detailed analytics. It adapts recommendations based on activity.\n\nFitZone helps users stay motivated and consistent in their fitness journey.",
+        "size": 60,
+        "reviews": 8700,
+        "ratingAvg": 4.4,
+        "downloads": 390000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 220
+            },
+            {
+                "name": "2 star",
+                "count": 360
+            },
+            {
+                "name": "3 star",
+                "count": 1200
+            },
+            {
+                "name": "4 star",
+                "count": 3100
+            },
+            {
+                "name": "5 star",
+                "count": 3820
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600",
+        "title": "MemoCloud",
+        "companyName": "MemoStack",
+        "id": 23,
+        "description": "MemoCloud is a cloud-based note-taking platform that allows users to store ideas and documents securely. It supports syncing across devices.\n\nUsers can organize notes into folders, search content easily, and access data anywhere. It ensures seamless productivity.\n\nMemoCloud is ideal for managing personal and professional notes efficiently.",
+        "size": 44,
+        "reviews": 7600,
+        "ratingAvg": 4.2,
+        "downloads": 280000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 240
+            },
+            {
+                "name": "2 star",
+                "count": 400
+            },
+            {
+                "name": "3 star",
+                "count": 1200
+            },
+            {
+                "name": "4 star",
+                "count": 2400
+            },
+            {
+                "name": "5 star",
+                "count": 3360
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1523473827531-2a64d0d36719?w=600",
+        "title": "PixelEdit",
+        "companyName": "PixelForge",
+        "id": 24,
+        "description": "PixelEdit is a professional photo editing app with powerful tools and AI enhancements. It is designed for creative editing.\n\nUsers can apply filters, adjust lighting, and retouch images with precision. It simplifies advanced editing tasks.\n\nPixelEdit helps users create high-quality visuals for personal and professional use.",
+        "size": 110,
+        "reviews": 15000,
+        "ratingAvg": 4.6,
+        "downloads": 900000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 220
+            },
+            {
+                "name": "2 star",
+                "count": 300
+            },
+            {
+                "name": "3 star",
+                "count": 900
+            },
+            {
+                "name": "4 star",
+                "count": 4800
+            },
+            {
+                "name": "5 star",
+                "count": 9780
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1507149833265-60c372daea22?w=600",
+        "title": "StreamFlix",
+        "companyName": "StreamBox",
+        "id": 25,
+        "description": "StreamFlix is a video streaming platform offering movies and series in HD quality. It provides smooth playback experience.\n\nUsers receive personalized recommendations and can create watchlists for better content discovery. It supports offline viewing.\n\nStreamFlix delivers entertainment anytime with a large content library.",
+        "size": 140,
+        "reviews": 38000,
+        "ratingAvg": 4.7,
+        "downloads": 4800000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 500
+            },
+            {
+                "name": "2 star",
+                "count": 800
+            },
+            {
+                "name": "3 star",
+                "count": 2000
+            },
+            {
+                "name": "4 star",
+                "count": 9000
+            },
+            {
+                "name": "5 star",
+                "count": 25700
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=600",
+        "title": "QuickCart",
+        "companyName": "Marketly",
+        "id": 26,
+        "description": "QuickCart is a fast and simple online shopping application designed for quick purchases. It supports smooth browsing and checkout.\n\nUsers can explore deals, compare products, and complete purchases securely. It improves shopping efficiency.\n\nQuickCart ensures fast delivery and a smooth e-commerce experience.",
+        "size": 88,
+        "reviews": 17200,
+        "ratingAvg": 4.3,
+        "downloads": 980000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 400
+            },
+            {
+                "name": "2 star",
+                "count": 600
+            },
+            {
+                "name": "3 star",
+                "count": 1800
+            },
+            {
+                "name": "4 star",
+                "count": 6000
+            },
+            {
+                "name": "5 star",
+                "count": 8400
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=600",
+        "title": "PlayNation",
+        "companyName": "PlayZone",
+        "id": 27,
+        "description": "PlayNation is a multiplayer gaming platform designed for competitive and casual gamers. It supports online matches and tournaments.\n\nUsers can compete with friends, track rankings, and unlock achievements. It provides a smooth gaming experience.\n\nPlayNation keeps gaming engaging with regular updates and challenges.",
+        "size": 125,
+        "reviews": 25000,
+        "ratingAvg": 4.6,
+        "downloads": 3100000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 600
+            },
+            {
+                "name": "2 star",
+                "count": 800
+            },
+            {
+                "name": "3 star",
+                "count": 2200
+            },
+            {
+                "name": "4 star",
+                "count": 8500
+            },
+            {
+                "name": "5 star",
+                "count": 12900
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1534081333815-ae5019106622?w=600",
+        "title": "SkyWeather",
+        "companyName": "SkyPulse",
+        "id": 28,
+        "description": "SkyWeather provides accurate weather forecasts and real-time updates. It helps users plan their daily activities effectively.\n\nThe app includes radar maps, alerts, and hourly predictions for better understanding of weather changes.\n\nSkyWeather ensures users are always prepared for any weather condition.",
+        "size": 38,
+        "reviews": 8200,
+        "ratingAvg": 4.3,
+        "downloads": 580000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 180
+            },
+            {
+                "name": "2 star",
+                "count": 320
+            },
+            {
+                "name": "3 star",
+                "count": 1000
+            },
+            {
+                "name": "4 star",
+                "count": 2700
+            },
+            {
+                "name": "5 star",
+                "count": 4000
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1526318472351-c75fcf070305?w=600",
+        "title": "DevTrack",
+        "companyName": "DevCore",
+        "id": 29,
+        "description": "DevTrack is a developer productivity tool that helps track coding projects and progress. It improves workflow organization.\n\nUsers can manage tasks, collaborate with teams, and monitor development stages easily. It enhances productivity.\n\nDevTrack is ideal for software teams and individual developers.",
+        "size": 66,
+        "reviews": 9400,
+        "ratingAvg": 4.5,
+        "downloads": 420000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 150
+            },
+            {
+                "name": "2 star",
+                "count": 300
+            },
+            {
+                "name": "3 star",
+                "count": 900
+            },
+            {
+                "name": "4 star",
+                "count": 3200
+            },
+            {
+                "name": "5 star",
+                "count": 4850
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1503602642458-232111445657?w=600",
+        "title": "MemoCloud Pro",
+        "companyName": "MemoStack",
+        "id": 30,
+        "description": "MemoCloud Pro is an advanced cloud note application designed for seamless synchronization and organization. It enhances productivity.\n\nUsers can manage notes, documents, and ideas across all devices with real-time syncing. It ensures data accessibility.\n\nMemoCloud Pro is perfect for professional and academic use.",
+        "size": 47,
+        "reviews": 7800,
+        "ratingAvg": 4.3,
+        "downloads": 300000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 200
+            },
+            {
+                "name": "2 star",
+                "count": 350
+            },
+            {
+                "name": "3 star",
+                "count": 1100
+            },
+            {
+                "name": "4 star",
+                "count": 2600
+            },
+            {
+                "name": "5 star",
+                "count": 3550
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600",
+        "title": "VaultSecure",
+        "companyName": "CyberNest",
+        "id": 31,
+        "description": "VaultSecure is a secure data storage application that protects sensitive information with encryption. It ensures privacy and safety.\n\nUsers can store passwords, documents, and personal data securely in one place. It simplifies digital security.\n\nVaultSecure provides peace of mind with strong protection features.",
+        "size": 52,
+        "reviews": 6900,
+        "ratingAvg": 4.6,
+        "downloads": 240000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 130
+            },
+            {
+                "name": "2 star",
+                "count": 250
+            },
+            {
+                "name": "3 star",
+                "count": 700
+            },
+            {
+                "name": "4 star",
+                "count": 2100
+            },
+            {
+                "name": "5 star",
+                "count": 3720
+            }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600",
+        "title": "CinemaHub",
+        "companyName": "StreamBox",
+        "id": 32,
+        "description": "CinemaHub is a movie streaming platform offering a wide library of films and series in HD quality. It provides smooth streaming.\n\nUsers can explore genres, create watchlists, and receive personalized recommendations. It improves entertainment discovery.\n\nCinemaHub ensures high-quality entertainment anytime, anywhere.",
+        "size": 155,
+        "reviews": 40000,
+        "ratingAvg": 4.8,
+        "downloads": 5200000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 650
+            },
+            {
+                "name": "2 star",
+                "count": 900
+            },
+            {
+                "name": "3 star",
+                "count": 2100
+            },
+            {
+                "name": "4 star",
+                "count": 9800
+            },
+            {
+                "name": "5 star",
+                "count": 26550
             }
         ]
     }
