@@ -2,11 +2,19 @@ import React from 'react';
 import { BsDownload } from 'react-icons/bs';
 import { FaStar } from 'react-icons/fa';
 import { IoMdRocket } from 'react-icons/io';
+import { useNavigate } from 'react-router';
 
 const AppCard = ({ app, isTrending = false }) => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate(`/apps/${app.id}`);
+        console.log("app clicked");
+    };
+
     const { image, title, downloads, ratingAvg } = app;
     return (
-        <div className="bg-white rounded-lg shadow-md p-4 w-76.5 space-y-4 hover:shadow-xl transition-all duration-300">
+        <div onClick={handleClick} className="bg-white rounded-lg shadow-md p-4 w-76.5 space-y-4 hover:shadow-xl transition-all duration-300">
 
             {/* Image */}
             <div className="relative bg-[#D9D9D9] rounded-md h-70 overflow-hidden">
