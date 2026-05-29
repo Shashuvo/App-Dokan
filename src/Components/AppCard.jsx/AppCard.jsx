@@ -9,7 +9,6 @@ const AppCard = ({ app, isTrending = false }) => {
 
     const handleClick = () => {
         navigate(`/apps/${app.id}`);
-        console.log("app clicked");
     };
 
     const { image, title, downloads, ratingAvg } = app;
