@@ -78,11 +78,13 @@ const AppsDetails = () => {
                 {/* App Review Chart */}
                 <RatingChart ratings={ratings}></RatingChart>
 
-                {/* Description */}
-                <div className="mt-10 space-y-4">
-                    <h2 className="text-lg font-semibold">Description</h2>
+                <div className="divider"></div>
 
-                    <p className="text-gray-600 whitespace-pre-line">
+                {/* Description */}
+                <div className="space-y-6">
+                    <h2 className="text-2xl font-semibold text-[#001931]">Description</h2>
+
+                    <p className="text-[#627382] text-xl whitespace-pre-line">
                         {description}
                     </p>
                 </div>
