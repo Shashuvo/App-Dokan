@@ -3,6 +3,15 @@ import { BiDownload } from 'react-icons/bi';
 import { FaStar } from 'react-icons/fa';
 import { MdReviews, MdSdStorage } from 'react-icons/md';
 import { useLoaderData, useParams } from 'react-router';
+import {
+    ResponsiveContainer,
+    BarChart,
+    Bar,
+    XAxis,
+    YAxis,
+    Tooltip,
+    CartesianGrid
+} from "recharts";
 
 const AppsDetails = () => {
     const { id } = useParams();
@@ -13,16 +22,19 @@ const AppsDetails = () => {
 
     const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = app;
 
-    const max = Math.max(...ratings.map((r) => r.value));
+    const chartData = ratings?.map((r) => ({
+        name: r.label,
+        value: r.value,
+    }));
     return (
         <div className="min-h-screen my-20">
-            <div className=" w-5/6 mx-auto bg-transparent">
+            <div className=" w-5/6 mx-auto flex flex-col gap-10 bg-transparent">
 
                 {/* Top Section */}
                 <div className="flex flex-col md:flex-row gap-10">
 
                     {/* Image */}
-                    <div className="w-87.5 h-87.5 rounded-xl overflow-hidden">
+                    <div className="w-89 h-89 rounded-xl overflow-hidden">
                         <img src={image} alt={title} className="w-full h-full object-cover" />
                     </div>
 
@@ -30,9 +42,9 @@ const AppsDetails = () => {
                     <div className="flex-1 space-y-7">
                         {/* name & developer */}
                         <div className='flex-1 space-y-2'>
-                            <h1 className="text-3xl font-bold text-[#001931]">{title}</h1>
+                            <h1 className="text-4xl font-bold text-[#001931]">{title}</h1>
 
-                            <p className="text-[#627382]">
+                            <p className="text-xl text-[#627382]">
                                 Developed by <span className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold'>{companyName}</span>
                             </p>
                         </div>
@@ -72,31 +84,34 @@ const AppsDetails = () => {
                     </div>
                 </div>
 
+                <div className="divider"></div>
+
                 {/* Ratings Section */}
-                <div className="mt-10">
-                    <h2 className="text-lg font-semibold mb-4">Ratings</h2>
+                {/* App Review Chart */}
+                <div className="mt-12">
+                    <h2 className="text-xl font-semibold mb-6 text-[#001931]">
+                        App Review Chart
+                    </h2>
 
-                    <div className="space-y-3">
-                        {ratings?.map((r, i) => (
-                            <div key={i} className="flex items-center gap-4">
-                                <span className="w-16 text-sm text-gray-600">
-                                    {r.label}
-                                </span>
+                    <div className="w-full h-80 bg-white rounded-xl p-4 shadow-sm">
+                        <ResponsiveContainer width="100%" height="100%">
+                            <BarChart data={chartData} margin={{ top: 10, right: 20, left: 0, bottom: 10 }}>
 
-                                <div className="flex-1 bg-gray-200 rounded-full h-3">
-                                    <div
-                                        className="bg-orange-500 h-3 rounded-full"
-                                        style={{
-                                            width: `${(r.value / max) * 100}%`,
-                                        }}
-                                    />
-                                </div>
+                                <CartesianGrid strokeDasharray="3 3" />
 
-                                <span className="text-sm text-gray-500 w-16 text-right">
-                                    {r.value}
-                                </span>
-                            </div>
-                        ))}
+                                <XAxis dataKey="name" />
+
+                                <YAxis />
+
+                                <Tooltip />
+
+                                <Bar
+                                    dataKey="count"
+                                    fill="#FF8811"
+                                    radius={[6, 6, 0, 0]}
+                                />
+                            </BarChart>
+                        </ResponsiveContainer>
                     </div>
                 </div>
 
