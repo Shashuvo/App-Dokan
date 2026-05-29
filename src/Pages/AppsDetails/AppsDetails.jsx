@@ -3,15 +3,8 @@ import { BiDownload } from 'react-icons/bi';
 import { FaStar } from 'react-icons/fa';
 import { MdReviews, MdSdStorage } from 'react-icons/md';
 import { useLoaderData, useParams } from 'react-router';
-import {
-    ResponsiveContainer,
-    BarChart,
-    Bar,
-    XAxis,
-    YAxis,
-    Tooltip,
-    CartesianGrid
-} from "recharts";
+import RatingChart from '../../Components/RatingChart/RatingChart';
+
 
 const AppsDetails = () => {
     const { id } = useParams();
@@ -22,10 +15,6 @@ const AppsDetails = () => {
 
     const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = app;
 
-    const chartData = ratings?.map((r) => ({
-        name: r.label,
-        value: r.value,
-    }));
     return (
         <div className="min-h-screen my-20">
             <div className=" w-5/6 mx-auto flex flex-col gap-10 bg-transparent">
@@ -86,34 +75,8 @@ const AppsDetails = () => {
 
                 <div className="divider"></div>
 
-                {/* Ratings Section */}
                 {/* App Review Chart */}
-                <div className="mt-12">
-                    <h2 className="text-xl font-semibold mb-6 text-[#001931]">
-                        App Review Chart
-                    </h2>
-
-                    <div className="w-full h-80 bg-white rounded-xl p-4 shadow-sm">
-                        <ResponsiveContainer width="100%" height="100%">
-                            <BarChart data={chartData} margin={{ top: 10, right: 20, left: 0, bottom: 10 }}>
-
-                                <CartesianGrid strokeDasharray="3 3" />
-
-                                <XAxis dataKey="name" />
-
-                                <YAxis />
-
-                                <Tooltip />
-
-                                <Bar
-                                    dataKey="count"
-                                    fill="#FF8811"
-                                    radius={[6, 6, 0, 0]}
-                                />
-                            </BarChart>
-                        </ResponsiveContainer>
-                    </div>
-                </div>
+                <RatingChart ratings={ratings}></RatingChart>
 
                 {/* Description */}
                 <div className="mt-10 space-y-4">
