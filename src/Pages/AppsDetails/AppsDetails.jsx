@@ -4,6 +4,7 @@ import { FaStar } from 'react-icons/fa';
 import { MdReviews, MdSdStorage } from 'react-icons/md';
 import { useLoaderData, useParams } from 'react-router';
 import RatingChart from '../../Components/RatingChart/RatingChart';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const AppsDetails = () => {
@@ -19,10 +20,13 @@ const AppsDetails = () => {
 
     const handleInstall = () => {
         setInstalled(true);
+        toast.success("App installed successfully!");
     }
+
 
     return (
         <div className="min-h-screen my-20">
+            <ToastContainer />
             <div className=" w-5/6 mx-auto flex flex-col gap-10 bg-transparent">
 
                 {/* Top Section */}
