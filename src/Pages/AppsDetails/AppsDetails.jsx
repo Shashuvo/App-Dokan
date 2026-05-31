@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BiDownload } from 'react-icons/bi';
 import { FaStar } from 'react-icons/fa';
 import { MdReviews, MdSdStorage } from 'react-icons/md';
@@ -9,11 +9,17 @@ import RatingChart from '../../Components/RatingChart/RatingChart';
 const AppsDetails = () => {
     const { id } = useParams();
 
+    const [installed, setInstalled] = useState(false);
+
     const apps = useLoaderData();
 
     const app = apps.find(app => app.id === parseInt(id));
 
     const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = app;
+
+    const handleInstall = () => {
+        setInstalled(true);
+    }
 
     return (
         <div className="min-h-screen my-20">
@@ -67,8 +73,8 @@ const AppsDetails = () => {
                             </div>
                         </div>
 
-                        <button className="mt-4 bg-[#00D390] text-xl font-semibold hover:bg-green-600 text-white px-5 py-2 rounded-lg">
-                            Install Now ({size} MB)
+                        <button onClick={handleInstall} disabled={installed} className={`mt-4 ${installed ? "bg-[#627382] cursor-not-allowed" : "bg-[#00D390] hover:bg-green-600 cursor-pointer"} text-xl font-semibold text-white px-5 py-2 rounded-lg`}>
+                            {installed ? "Installed" : `Install Now (${size} MB)`}
                         </button>
                     </div>
                 </div>
