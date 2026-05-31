@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router';
 import AppCard from '../../Components/AppCard.jsx/AppCard';
+import NotFound from '../../Components/AppNotFOund/NotFound';
 
 const Apps = () => {
     // apps data
@@ -60,10 +61,8 @@ const Apps = () => {
                             <AppCard app={app} key={app.id} />
                         ))
                     ) : (
-                        <div className="col-span-4 text-center py-20">
-                            <h2 className="text-5xl font-semibold text-[#627382]">
-                                No App Found
-                            </h2>
+                        <div className="col-span-4 text-center">
+                            <NotFound></NotFound>
                         </div>
                     )
                 }
