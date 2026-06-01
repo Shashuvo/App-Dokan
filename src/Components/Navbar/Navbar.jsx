@@ -7,7 +7,7 @@ const Navbar = () => {
     const links = <>
         <NavLink to="/" className="font-semibold">Home</NavLink>
         <NavLink to="/apps" className="font-semibold">Apps</NavLink>
-        <NavLink to="/installed" className="font-semibold">Installation</NavLink>
+        <NavLink to="/installedApps" className="font-semibold">Installation</NavLink>
     </>
     return (
         <div className='bg-white shadow-sm'>

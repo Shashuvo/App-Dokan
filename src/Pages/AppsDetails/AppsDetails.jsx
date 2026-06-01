@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BiDownload } from 'react-icons/bi';
 import { FaStar } from 'react-icons/fa';
 import { MdReviews, MdSdStorage } from 'react-icons/md';
-import { useLoaderData, useParams } from 'react-router';
+import { useLoaderData, useOutletContext, useParams } from 'react-router';
 import RatingChart from '../../Components/RatingChart/RatingChart';
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -11,6 +11,8 @@ const AppsDetails = () => {
     const { id } = useParams();
 
     const [installed, setInstalled] = useState(false);
+
+    const { handleInstalledIds } = useOutletContext();
 
     const apps = useLoaderData();
 
@@ -21,6 +23,7 @@ const AppsDetails = () => {
     const handleInstall = () => {
         setInstalled(true);
         toast.success("App installed successfully!");
+        handleInstalledIds(app.id);
     }
 
 
