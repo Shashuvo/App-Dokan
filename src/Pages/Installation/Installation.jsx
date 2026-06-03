@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 import { useLoaderData, useOutletContext } from 'react-router';
 import InstallAppCard from '../../Components/InstallAppCard/InstallAppCard';
 import NoInstallApps from '../../Components/NoInstallApps/NoInstallApps';
@@ -6,13 +6,19 @@ import NoInstallApps from '../../Components/NoInstallApps/NoInstallApps';
 const Installation = () => {
 
     const { installedIds } = useOutletContext();
-
     const apps = useLoaderData();
+    const [sortBy, setSortBy] = useState('default');
 
     const installedApps = apps.filter(app => installedIds.includes(app.id));
 
+    const sortedApps = [...installedApps].sort((a, b) => {
+        if (sortBy === 'size') return a.size - b.size;
+        if (sortBy === 'downloads') return b.download_count - a.download_count;
+        return 0;
+    });
+
     return (
-        <div div className='my-20 w-5/6 mx-auto'>
+        <div className='my-20 w-5/6 mx-auto'>
             {/* title & description */}
             <div className='space-y-4 text-center mb-10'>
                 <h1 className='font-bold text-5xl'>Your Installed Apps</h1>
@@ -20,22 +26,25 @@ const Installation = () => {
             </div>
             {/* app counts & sort apps */}
             <div className='mb-10 flex justify-between'>
-                <span className='text-2xl font-semibold'>{installedApps.length} Apps Found</span>
+                <span className='text-2xl font-semibold'>{sortedApps.length} Apps Found</span>
                 <span>
-                    <select defaultValue="Sort By Size" className="select select-[#627382] text-[#627382] bg-transparent">
-                        <option>Sort By Size</option>
-                        <option>Sort By Downloads</option>
+                    <select
+                        value={sortBy}
+                        onChange={e => setSortBy(e.target.value)}
+                        className="select select-[#627382] text-[#627382] bg-[#F5F5F5]"
+                    >
+                        <option value="default">Sort By</option>
+                        <option value="size">Sort By Size</option>
+                        <option value="downloads">Sort By Downloads</option>
                     </select>
                 </span>
             </div>
             {/* installed apps */}
             <div className='space-y-4'>
                 {
-                   installedApps.length > 0 ?
-                    installedApps.map(installedApp => <InstallAppCard installedApp={installedApp} key={installedApp.id}></InstallAppCard>)
-                    : (<div>
-                        <NoInstallApps></NoInstallApps>
-                    </div>)
+                    sortedApps.length > 0 ?
+                        sortedApps.map(installedApp => <InstallAppCard installedApp={installedApp} key={installedApp.id} />)
+                        : <NoInstallApps />
                 }
             </div>
         </div>
