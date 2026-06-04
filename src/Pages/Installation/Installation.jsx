@@ -21,7 +21,7 @@ const Installation = () => {
 
     return (
         <div className='my-20 w-5/6 mx-auto'>
-            <ToastContainer></ToastContainer>
+            <ToastContainer />
             {/* title & description */}
             <div className='space-y-4 text-center mb-10'>
                 <h1 className='font-bold text-5xl'>Your Installed Apps</h1>

@@ -5,6 +5,7 @@ import { MdReviews, MdSdStorage } from 'react-icons/md';
 import { useLoaderData, useOutletContext, useParams } from 'react-router';
 import RatingChart from '../../Components/RatingChart/RatingChart';
 import { ToastContainer, toast } from 'react-toastify';
+import { addToInstalledApps } from '../../utilities/AddtoDB/AddToDB';
 
 
 const AppsDetails = () => {
@@ -12,7 +13,7 @@ const AppsDetails = () => {
 
     const [installed, setInstalled] = useState(false);
 
-    const { handleInstalledIds } = useOutletContext();
+    const { setInstalledIds } = useOutletContext();
 
     const apps = useLoaderData();
 
@@ -21,10 +22,13 @@ const AppsDetails = () => {
     const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = app;
 
     const handleInstall = () => {
-        setInstalled(true);
-        toast.success("App installed successfully!");
-        handleInstalledIds(app.id);
+        const success = addToInstalledApps(app.id, setInstalledIds); // ← save to localStorage + sync state
+        if (success) {
+            setInstalled(true);
+            toast.success(`${title} installed successfully!`);
+        }
     }
+
 
 
     return (

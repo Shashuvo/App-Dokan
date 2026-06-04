@@ -7,15 +7,12 @@ import { getInstalledApps } from '../../utilities/AddtoDB/AddToDB';
 const Root = () => {
     const [installedIds, setInstalledIds] = useState(() => getInstalledApps());
 
-    const handleInstalledIds = (id) => {
-        setInstalledIds(prev => [...prev, id]);
-    };
 
     return (
         <div>
             <Navbar></Navbar>
             <div>
-                <Outlet context={{ installedIds, setInstalledIds, handleInstalledIds }}></Outlet>
+                <Outlet context={{ installedIds, setInstalledIds }}></Outlet>
             </div>
             <Footer></Footer>
         </div>

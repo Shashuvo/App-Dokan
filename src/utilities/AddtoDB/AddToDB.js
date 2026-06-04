@@ -13,13 +13,13 @@ const getInstalledApps = () => {
 
 const addToInstalledApps = (id, onUpdate) => {
     const installedAppsData = getInstalledApps();
-    if (installedAppsData.includes(id)) {
+    if (installedAppsData.map(String).includes(String(id))) {
         toast.warning("You already have installed this app.");
         return false;
     } else {
         installedAppsData.push(id);
         localStorage.setItem("installed", JSON.stringify(installedAppsData));
-        onUpdate?.(installedAppsData); // ← notify React
+        onUpdate?.(prev => [...prev, id]);
         return true;
     }
 };
