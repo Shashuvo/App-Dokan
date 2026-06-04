@@ -11,24 +11,24 @@ const getInstalledApps = () => {
     }
 };
 
-const addToInstalledApps = (id) => {
+const addToInstalledApps = (id, onUpdate) => {
     const installedAppsData = getInstalledApps();
     if (installedAppsData.includes(id)) {
         toast.warning("You already have installed this app.");
         return false;
-    }
-    else {
+    } else {
         installedAppsData.push(id);
-        const setInstalledData = JSON.stringify(installedAppsData);
-        localStorage.setItem("installed", setInstalledData);
+        localStorage.setItem("installed", JSON.stringify(installedAppsData));
+        onUpdate?.(installedAppsData); // ← notify React
         return true;
     }
 };
 
-const removeFromDB = (id) => {
+const removeFromDB = (id, onUpdate) => {
     const installedAppsData = getInstalledApps();
-    const updatedInstalledData = installedAppsData.filter((installedID) => installedID !== id);
-    localStorage.setItem("installed", JSON.stringify(updatedInstalledData));
+    const updated = installedAppsData.filter(installedID => String(installedID) !== String(id));
+    localStorage.setItem("installed", JSON.stringify(updated));
+    onUpdate?.(prev => prev.filter(installedID => String(installedID) !== String(id)));
 };
 
 export { addToInstalledApps, getInstalledApps, removeFromDB };

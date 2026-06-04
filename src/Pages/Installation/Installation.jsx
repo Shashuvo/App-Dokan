@@ -2,10 +2,11 @@ import { useState } from 'react';
 import { useLoaderData, useOutletContext } from 'react-router';
 import InstallAppCard from '../../Components/InstallAppCard/InstallAppCard';
 import NoInstallApps from '../../Components/NoInstallApps/NoInstallApps';
+import { ToastContainer } from 'react-toastify';
 
 const Installation = () => {
 
-    const { installedIds } = useOutletContext();
+    const { installedIds, setInstalledIds } = useOutletContext();
     const apps = useLoaderData();
     const [sortBy, setSortBy] = useState('default');
 
@@ -17,8 +18,10 @@ const Installation = () => {
         return 0;
     });
 
+
     return (
         <div className='my-20 w-5/6 mx-auto'>
+            <ToastContainer></ToastContainer>
             {/* title & description */}
             <div className='space-y-4 text-center mb-10'>
                 <h1 className='font-bold text-5xl'>Your Installed Apps</h1>
@@ -43,7 +46,7 @@ const Installation = () => {
             <div className='space-y-4'>
                 {
                     sortedApps.length > 0 ?
-                        sortedApps.map(installedApp => <InstallAppCard installedApp={installedApp} key={installedApp.id} />)
+                        sortedApps.map(installedApp => <InstallAppCard installedApp={installedApp} key={installedApp.id} setInstalledIds={setInstalledIds} />)
                         : <NoInstallApps />
                 }
             </div>
