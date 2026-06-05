@@ -5,6 +5,7 @@ import Apps from "../Pages/Apps/Apps";
 import AppsDetails from "../Pages/AppsDetails/AppsDetails";
 import ErrorPage from "../Pages/Error/ErrorPage";
 import Installation from "../Pages/Installation/Installation";
+import Loading from "../Components/Loader/Loading";
 
 
 const router = createBrowserRouter([
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
           return fetch('/apps.json')
         },
         Component: Home,
-        hydrateFallbackElement: <div>Loading...</div>
+        hydrateFallbackElement:<Loading></Loading>
       },
       {
         path: "apps",
