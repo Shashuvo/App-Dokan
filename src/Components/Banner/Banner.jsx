@@ -9,8 +9,8 @@ const Banner = () => {
             <h1 className='text-6xl font-bold text-[#001931]'>We Build <br /><span className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Productive</span> Apps</h1>
             <p className='text-[#627382] text-lg'>At App Dokan, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             <div className='flex gap-2'>
-                <button className='btn'><FcGoogle className='w-5 h-5' />Google Play</button>
-                <button className='btn text-black'><FaAppStoreIos className='bg-linear-to-r from-[#00BFFC] to-[#0073F6] w-5 h-5 text-white' />App Store</button>
+                <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" className='btn'><FcGoogle className='w-5 h-5' />Google Play</a>
+                <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer" className='btn text-black'><FaAppStoreIos className='bg-linear-to-r from-[#00BFFC] to-[#0073F6] w-5 h-5 text-white' />App Store</a>
             </div>
             <img src={bannerIMG} alt="Banner Image" />
         </div>
