@@ -1,202 +1,126 @@
-# 🦸‍♂️ Assignment 03 — Hero IO
+# 📱 App Dokan
 
-
----
-
-
-# 🐣 Basic Requirements
-
-- Make the Application Responsive for All the Devices
-- Do minimum 5 commits to your github Repository
-- Give a meaning full name to your application
-- Make Sure on Production Application is error Free
-- Add a Readme.md with App Name , Description & Technologies
+A modern app discovery and management platform where users can browse, install, and manage their favorite apps — all in one place.
 
 ---
 
-# 🔧 Main Requirements
+## 📖 Description
 
-## 1. 🧱 Layout & Data Design
-
-#### Header
-
-- The header must include:
-  - A logo.on clicking it user will be navigated to home page.
-  - A navigation bar with links [ `home` , `apps` , `installation` ] and active route indication.
-  - A `Contribution` button as Figma linking to the your GitHub profile.
-
-#### Footer
-
-- Design a custom footer using your own creativity and style.
-
-#### Data
-
-- Create an JSON Array of minimum 12-20 objects for app data using the following structure:
-  ```js
-  {
-    image: string;
-    title: string;
-    companyName: string;
-    id: number;
-    description: string;
-    size: number;
-    reviews: number;
-    ratingAvg: number;
-    downloads: number;
-    ratings: [
-      { name: "1 star"; count: number },
-      { name: "2 star"; count: number },
-      { name: "3 star"; count: number },
-      { name: "4 star"; count: number },
-      { name: "5 star"; count: number }
-    ];
-  }
-  ```
+App Dokan is a React-based single-page application that simulates an app store experience. Users can explore a curated collection of apps, view detailed information including ratings and reviews, install apps to their personal list, and manage installations with sort and uninstall features. Installed apps are persisted via localStorage, so your collection is always saved across sessions.
 
 ---
 
-## 2. 🏠 Home Page
+## ✨ Features
 
-#### Banner
-
-- Must contain a center-aligned heading, text, and two buttons.
-- “App Store” button will redirect to the App Store.
-- “Play Store” button will redirect to the Play Store.
-
-#### States Section
-
-- Must contain three state cards as shown in Figma.
-
-#### Top Apps Section
-
-- Display eight apps in a four-column layout.
-- Each app card should display:
-  - App title
-  - Image
-  - Download count
-  - Average rating
-- Clicking on a card should navigate the user to the App Details page.
-- Include a “Show All” button that navigates to the All Apps page.
+- 🏠 **Home Page** — Banner with App Store & Play Store links, stats section, and top 8 featured apps
+- 📱 **All Apps Page** — Browse all apps with live case-insensitive search
+- 📊 **App Details Page** — Full app info, Recharts review chart, and install button with toast feedback
+- 🗂️ **My Installation Page** — View, sort, and uninstall your installed apps
+- 💾 **localStorage Persistence** — Installed apps saved across page refreshes
+- 🔔 **Toast Notifications** — Success and warning feedback on install/uninstall
+- ⚠️ **Custom Error Page** — Friendly 404 for invalid routes
+- ⬆️ **Scroll To Top** — Automatically scrolls to top on route change
 
 ---
 
-## 3.📱 All Apps Page
+## 🛠️ Technologies
 
-#### Title Section
-
-- Include a title and subtitle following the Figma design.
-
-#### Search and States
-
-- Display the total number of apps on the left and a search bar on the right.
-- `Implement live search functionality`
-  - filters apps by title as the user types.
-  - Search will be case-insensitive
-  - If no app matches, display a “No App Found” message.
-
-#### App Section
-
-- Display all apps from the JSON data.
-- Each app card should include:
-  - App title
-  - Image
-  - Download count
-  - Average rating
-- Clicking on an app card should navigate to the App Details page.
+| Category | Technology |
+|----------|------------|
+| Framework | React 19 |
+| Routing | React Router v7 |
+| Styling | Tailwind CSS v4 + DaisyUI |
+| Charts | Recharts |
+| Icons | React Icons |
+| Notifications | React Toastify |
+| Data Persistence | localStorage |
+| Build Tool | Vite |
+| Deployment | Netlify |
 
 ---
 
-## 4.📊 App Details Page
+## 🚀 Getting Started
 
-#### App Information
+### Prerequisites
+- Node.js 18+
+- npm or yarn
 
-- Show app image on the left.
-- Display app details such as title, rating, downloads, reviews.
-- Include an `Install button`:
-  - When clicked, it becomes disabled and the text changes to `Installed`.
-  - Show a Success Toast after App installed
+### Installation
 
-#### App Review Chart
+```bash
+# Clone the repository
+git clone https://github.com/your-username/app-dokan.git
 
-- Implement a responsive chart using the **Recharts** library.
-- Visualize the app’s review data as shown in the Figma design.
+# Navigate into the project
+cd app-dokan
 
-#### App Description
+# Install dependencies
+npm install
 
-- Show the app details in description section as per Figma layout.
+# Start the development server
+npm run dev
+```
 
----
+### Build for Production
 
-## 5. Error Page & Others
-
-- Create a custom error page for invalid routes.
-
-- Show a loading animation during: `Challenge Part`  
-
-  - Page navigation. 
-  - Search operation.
-
-- Show a Relevant Not Found message app not found in app details section.
-
-- Ensure that reloading any route after deployment does not cause an error.
+```bash
+npm run build
+```
 
 ---
 
-# Challenge Requirement
+## 📁 Project Structure
 
-### LocalStorage Features
-
-#### App Installation
-
-- When the “Install” button is clicked:
-  - Save the app to localStorage.
-  - If the app is already installed, show a disabled button with the text `Installed`.
-
-#### My Installation Page
-
-- Create a page named “My Installation” following the Figma design.
-- Display all installed apps as cards.
-- Include an Uninstall button:
-  - Clicking it
-    - removes the app from both the UI and localStorage.
-    - Show an Toast with some relevant message
-
----
-
-### Sort by Downloads
-
-- Implement a dropdown for sorting apps by download count.
-- The dropdown must include:
-  - **High-Low:** Sort apps in descending order by downloads.
-  - **Low-High:** Sort apps in ascending order by downloads.
-
----
-
-### Loading Animation
-
-- Show a loading animation during: 
-  - Page navigation. 
-  - Search operation
+```
+src/
+├── assets/
+├── Components/
+│   ├── AppCard/
+│   │   └── AppCard.jsx
+│   ├── Banner/
+│   ├── Footer/
+│   ├── InstallAppCard/
+│   ├── Loader/
+│   ├── Navbar/
+│   ├── NoInstallApps/
+│   ├── RatingChart/
+│   ├── ScrollToTop/
+│   ├── Stats/
+│   └── TrendingApps/
+│       └── TrendingApps.jsx
+├── Pages/
+│   ├── Apps/
+│   ├── AppsDetails/
+│   ├── Error/
+│   ├── Home/
+│   ├── Installation/
+│   └── Root/
+├── Routes/
+│   └── Router.jsx
+├── utilities/
+│   └── AddtoDB/
+│       └── AddToDB.js
+└── main.jsx
+```
 
 ---
 
-## 🚀 Deployment
+## 🌐 Deployment
 
-- Deploy the project to Cloudflare / Netlify / Vercel.
-- Reloading from any route must work correctly without showing a 404 error.
+The app is deployed and accessible at: **[app-dokan.netlify.app](https://app-dokan.netlify.app/)**
+
+> ⚠️ For client-side routing to work correctly after deployment, configure your hosting provider:
+> - **Netlify**: Add a `_redirects` file with `/* /index.html 200`
 
 ---
 
-## 🔗 Submission Guideline
+## 👤 Author
 
-- **Live Link :** YOUR_DEPLOYED_URL_HERE
-- **GitHub Repository:** YOUR_REPO_URL_HERE
+**MD. Shahariat Hossen Shuvo**
+- GitHub: [@Shashuvo](https://github.com/Shashuvo)
 
+---
 
-### 📅 Deadline For 60 marks: 26 March , 2026 (11:59 pm ⏱️)
+## 📄 License
 
-### 📅 Deadline For 50 marks : 27 March , 2026 (11:59 pm⏱️)
-
-### 📅 Deadline For 30 marks: Since this is the final assignment, there will be no 30-mark deadline. You must submit it within the 50-mark deadline to qualify for the reward.
-
-
+This project is open source and available under the [MIT License](LICENSE).
